@@ -8,4 +8,7 @@
     <string name="hello_world">Hello Square World!</string>
     <string name="password">Contraseña</string>
     <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_activity_register__doctor">Crear Cuenta</string>
+    <string name="title_activity_welcome">Bienvenido</string>
+    <string name="title_activity_viewDoctor">Bienvenido</string>
 </resources>
