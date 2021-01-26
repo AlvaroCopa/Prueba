@@ -13,4 +13,9 @@
     <string name="title_activity_viewDoctor">Bienvenido</string>
     <string name="title_activity_farmaceutico">FarmaceuticoActivity</string>
     <string name="title_activity_recepcion_receta">RecepcionRecetaActivity</string>
+    <string name="title_activity_colaboradores">ColaboradoresActivity</string>
+    <string name="title_activity_elimina_colaborador">EliminaColaboradorActivity</string>
+    <string name="title_activity_adici_farmaceutico">AdiciFarmaceuticoActivity</string>
+    <string name="title_activity_adic_farmacia">AdicFarmaciaActivity</string>
+    <string name="title_activity_adicinar_farmacia">AdicinarFarmaciaActivity</string>
 </resources>

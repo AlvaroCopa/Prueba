@@ -26,6 +26,51 @@
             android:value="true" />
 
         <activity
+            android:name=".AdicinarFarmaciaActivity"
+            android:label="@string/title_activity_adicinar_farmacia">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AdicFarmaciaActivity"
+            android:label="@string/title_activity_adic_farmacia">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AdiciFarmaceuticoActivity"
+            android:label="@string/title_activity_adici_farmaceutico">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".EliminaColaboradorActivity"
+            android:label="@string/title_activity_elimina_colaborador">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ColaboradoresActivity"
+            android:label="@string/title_activity_colaboradores">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".RecepcionRecetaActivity"
             android:label="@string/title_activity_recepcion_receta">
             <intent-filter>

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="@dimen/box_inset_layout_padding"
-    tools:context=".FarmaceuticoActivity"
+    tools:context=".AdicFarmaciaActivity"
     tools:deviceIds="wear"
     android:background="@drawable/fondo">
 
@@ -14,22 +14,11 @@
         android:id="@+id/image"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/doctor"
+        android:src="@drawable/logo_farmacorp"
         android:paddingTop="35dp"
         android:scaleType="center"
         android:layout_centerHorizontal="true"/>
-    <TextView
-        android:id="@+id/idTextDoctor"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/image"
-        android:layout_centerHorizontal="true"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:text="Ramon Habila\nFarmacorp"
-        android:layout_marginBottom="180dp"
 
-        />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -58,10 +47,18 @@
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
             android:textColor="@color/colorPrimary"
-            android:text="Perfil"
+            android:text="Colaboradores"
+            android:drawableStart="@drawable/admi2"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:background="@drawable/button_selector"
+            android:paddingBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/colorPrimary"
+            android:text="Libro de Controlados"
             android:drawableStart="@drawable/admi2"/>
     </LinearLayout>
-
-
 </RelativeLayout>
-
