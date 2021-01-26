@@ -11,4 +11,6 @@
     <string name="title_activity_register__doctor">Crear Cuenta</string>
     <string name="title_activity_welcome">Bienvenido</string>
     <string name="title_activity_viewDoctor">Bienvenido</string>
+    <string name="title_activity_farmaceutico">FarmaceuticoActivity</string>
+    <string name="title_activity_recepcion_receta">RecepcionRecetaActivity</string>
 </resources>
