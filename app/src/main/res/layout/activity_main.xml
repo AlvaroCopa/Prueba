@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -64,7 +63,7 @@
             android:layout_height="wrap_content"
             android:height="20dp"
             android:textColor="@color/colorAccent"
-            android:background="#FFFFFF"
+            android:background="@drawable/button_selector"
             android:onClick="login"
             android:text="Iniciar Sesion"/>
         <Button
@@ -72,8 +71,9 @@
             android:layout_height="wrap_content"
             android:height="20dp"
             android:layout_marginTop="15dp"
-            android:textColor="@color/colorAccent"
-            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/textColor"
+            android:background="@drawable/button_second"
+            android:layout_marginBottom="20dp"
             android:text="Registrate"
             android:onClick="register"/>
     </LinearLayout>

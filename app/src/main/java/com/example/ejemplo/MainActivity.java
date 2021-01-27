@@ -15,11 +15,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
     public void register(View view){
-        startActivity(new Intent(getApplicationContext(),Welcome.class));
+        startActivity(new Intent(getApplicationContext(), WelcomeActivity.class));
         //finish();
     }
 
     public void login(View view) {
-        startActivity(new Intent(getApplicationContext(),ViewDoctor.class));
+        startActivity(new Intent(getApplicationContext(), ViewDoctorActivity.class));
     }
 }

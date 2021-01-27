@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Register_Doctor">
+    tools:context=".Register_DoctorActivity">
     <LinearLayout
+        android:id="@+id/form"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:isScrollContainer="true"
         android:scrollbarAlwaysDrawVerticalTrack="true"
         android:orientation="vertical">
         <com.google.android.material.textfield.TextInputLayout
@@ -67,6 +69,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/textColor2"
+                android:inputType="number"
                 android:singleLine="true"
                 android:backgroundTint="@color/colorAccent"
                 />
@@ -90,6 +93,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColorHint="@color/textColor2"
+            android:hint="Especialidad"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/especialidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColor2"
+                android:singleLine="true"
+                android:backgroundTint="@color/colorAccent"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/textColor2"
             android:hint="Celular"
             >
             <com.google.android.material.textfield.TextInputEditText
@@ -97,6 +115,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/textColor2"
+                android:inputType="phone"
                 android:singleLine="true"
                 android:backgroundTint="@color/colorAccent"
                 />
@@ -112,6 +131,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/textColor2"
+                android:inputType="textWebEmailAddress"
                 android:singleLine="true"
                 android:backgroundTint="@color/colorAccent"
                 />
@@ -157,11 +177,11 @@
         android:layout_marginRight="50dp"
         android:orientation="vertical">
         <Button
+            android:id="@+id/register"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:height="20dp"
             android:textColor="@color/colorAccent"
-            android:background="#FFFFFF"
+            android:background="@drawable/button_selector"
             android:text="Registrar"/>
         <Button
             android:layout_width="match_parent"
@@ -171,6 +191,7 @@
             android:textColor="@color/colorAccent"
             android:background="@color/colorPrimaryDark"
             android:text="Cancelar"
+            android:layout_marginBottom="20dp"
             android:onClick="cancelar"/>
     </LinearLayout>
 </RelativeLayout>

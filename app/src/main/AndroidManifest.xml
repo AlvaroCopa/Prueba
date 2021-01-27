@@ -2,9 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.ejemplo">
 
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
-    <uses-feature android:name="android.hardware.type.watch" />
 
     <application
         android:allowBackup="true"
@@ -13,81 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <uses-library
-            android:name="com.google.android.wearable"
-            android:required="true" />
-
-        <!--
-               Set to true if your app is Standalone, that is, it does not require the handheld
-               app to run.
-        -->
-        <meta-data
-            android:name="com.google.android.wearable.standalone"
-            android:value="true" />
-
-        <activity
-            android:name=".AdicinarFarmaciaActivity"
-            android:label="@string/title_activity_adicinar_farmacia">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".AdicFarmaciaActivity"
-            android:label="@string/title_activity_adic_farmacia">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".AdiciFarmaceuticoActivity"
-            android:label="@string/title_activity_adici_farmaceutico">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".EliminaColaboradorActivity"
-            android:label="@string/title_activity_elimina_colaborador">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".ColaboradoresActivity"
-            android:label="@string/title_activity_colaboradores">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".RecepcionRecetaActivity"
-            android:label="@string/title_activity_recepcion_receta">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".FarmaceuticoActivity"
-            android:label="@string/title_activity_farmaceutico">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".RecetaActivity"></activity>
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -95,16 +20,37 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
-        <activity android:name=".MainActivity2" />
         <activity
-            android:name=".Welcome"
+            android:name=".AdicinarFarmaciaActivity"
+            android:label="@string/title_activity_adicinar_farmacia"></activity>
+        <activity
+            android:name=".AdicFarmaciaActivity"
+            android:label="@string/title_activity_adic_farmacia"></activity>
+        <activity
+            android:name=".AdiciFarmaceuticoActivity"
+            android:label="@string/title_activity_adici_farmaceutico"></activity>
+        <activity
+            android:name=".EliminaColaboradorActivity"
+            android:label="@string/title_activity_elimina_colaborador"></activity>
+        <activity
+            android:name=".ColaboradoresActivity"
+            android:label="@string/title_activity_colaboradores"></activity>
+        <activity
+            android:name=".RecepcionRecetaActivity"
+            android:label="@string/title_activity_recepcion_receta"></activity>
+        <activity
+            android:name=".FarmaceuticoActivity"
+            android:label="@string/title_activity_farmaceutico"></activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".PacientActivity" />
+        <activity
+            android:name=".WelcomeActivity"
             android:label="@string/title_activity_welcome" />
         <activity
-            android:name=".Register_Doctor"
+            android:name=".Register_DoctorActivity"
             android:label="@string/title_activity_register__doctor" />
         <activity
-            android:name=".ViewDoctor"
+            android:name=".ViewDoctorActivity"
             android:label="@string/title_activity_viewDoctor" />
     </application>
 

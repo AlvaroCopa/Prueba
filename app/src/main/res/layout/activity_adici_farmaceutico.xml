@@ -163,15 +163,16 @@
             android:layout_height="wrap_content"
             android:height="20dp"
             android:textColor="@color/colorAccent"
-            android:background="#FFFFFF"
+            android:background="@drawable/button_selector"
             android:text="Registrar"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:height="20dp"
             android:layout_marginTop="15dp"
-            android:textColor="@color/colorAccent"
-            android:background="@color/colorPrimaryDark"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/textColor"
+            android:background="@drawable/button_second"
             android:text="Cancelar"
             android:onClick="cancelar"/>
     </LinearLayout>

@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
-    android:padding="@dimen/box_inset_layout_padding"
-    tools:context=".ColaboradoresActivity"
-    tools:deviceIds="wear">
+    tools:context=".ColaboradoresActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -65,8 +62,9 @@
             android:layout_height="wrap_content"
             android:height="20dp"
             android:layout_marginTop="15dp"
-            android:textColor="#FFFFFF"
-            android:background="@color/colorPrimaryDark"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/textColor"
+            android:background="@drawable/button_second"
             android:text="Adicionar"/>
     </LinearLayout>
 </RelativeLayout>
